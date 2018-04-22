@@ -1,0 +1,19 @@
+group 'org.fiuba.onlineradio'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+mainClassName = 'RadioListener'
+
+
+run {
+    if (project.hasProperty("arg1")) {
+        args = [arg1]
+        if (project.hasProperty("arg2")) {
+            args = [arg1,arg2]
+        }
+    }
+}

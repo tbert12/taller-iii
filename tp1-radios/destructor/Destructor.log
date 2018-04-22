@@ -1,0 +1,433 @@
+[2018-04-20 20:53:56] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-20 20:53:56] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-20 20:53:56] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-20 20:53:56] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-20 20:53:56] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-20 20:53:56] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-20 20:53:56] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-20 20:53:56] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-20 20:53:56] [INFO ] FileCellBlock:88 - Cleaned file '../.database/connection'
+[2018-04-20 20:53:56] [INFO ] FileCellBlock:88 - Cleaned file '../.database/user'
+[2018-04-20 20:53:56] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 00:00:12] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 00:00:12] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 00:00:12] [ERROR] CommunicationWrapper:23 - Error: Conexión rehusada (Connection refused)
+[2018-04-21 00:00:12] [FATAL] Destructor:15 - Cannot connect
+[2018-04-21 00:00:54] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 00:00:54] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 00:00:54] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 00:00:54] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 00:00:54] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 00:00:54] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 00:00:54] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 00:00:54] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 00:00:54] [INFO ] FileCellBlock:88 - Cleaned file '../.database/connection'
+[2018-04-21 00:00:54] [INFO ] FileCellBlock:88 - Cleaned file '../.database/user'
+[2018-04-21 00:00:54] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 00:09:28] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 00:09:28] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 00:09:28] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 00:09:28] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 00:09:28] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 00:09:28] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 00:09:28] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 00:09:28] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 00:09:28] [INFO ] FileCellBlock:88 - Cleaned file '../.database/connection'
+[2018-04-21 00:09:28] [INFO ] FileCellBlock:88 - Cleaned file '../.database/user'
+[2018-04-21 00:09:28] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 00:11:05] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 00:11:05] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 00:11:05] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 00:11:05] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 00:11:05] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 00:11:05] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 00:11:05] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 00:11:05] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 00:11:05] [INFO ] FileCellBlock:88 - Cleaned file '../.database/connection'
+[2018-04-21 00:11:05] [INFO ] FileCellBlock:88 - Cleaned file '../.database/user'
+[2018-04-21 00:11:05] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 02:46:11] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 02:46:11] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 02:46:11] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 02:46:11] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 02:46:11] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 02:46:11] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 02:46:11] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 02:46:11] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 02:46:11] [INFO ] FileCellBlock:88 - Cleaned file '../.database/connection'
+[2018-04-21 02:46:11] [INFO ] FileCellBlock:88 - Cleaned file '../.database/user'
+[2018-04-21 02:46:11] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 02:48:04] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 02:48:04] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 02:48:04] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 02:48:04] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 02:48:04] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 02:48:04] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 02:48:04] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 02:48:04] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 02:48:04] [DEBUG] BlockDatabase:50 - Load database stations
+[2018-04-21 02:48:04] [INFO ] FileCellBlock:88 - Cleaned file '../.database/connection'
+[2018-04-21 02:48:04] [INFO ] FileCellBlock:88 - Cleaned file '../.database/user'
+[2018-04-21 02:48:04] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 02:49:07] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 02:49:07] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 02:49:08] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 02:49:08] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 02:49:08] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 02:49:08] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 02:49:08] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 02:49:08] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 02:49:08] [DEBUG] BlockDatabase:50 - Load database station.radio1
+[2018-04-21 02:49:08] [INFO ] FileCellBlock:88 - Cleaned file '../.database/connection'
+[2018-04-21 02:49:08] [INFO ] FileCellBlock:88 - Cleaned file '../.database/user'
+[2018-04-21 02:49:08] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 02:51:14] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 02:51:14] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 02:51:14] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 02:51:14] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 02:51:14] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 02:51:14] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 02:51:14] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 02:51:14] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 02:51:14] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 02:51:14] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 02:51:14] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 02:51:39] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 02:51:39] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 02:51:39] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 02:51:39] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 02:51:39] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 02:51:39] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 02:51:39] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 02:51:39] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 02:51:39] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 02:51:39] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 02:51:39] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 02:58:07] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 02:58:07] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 02:58:08] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 02:58:08] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 02:58:08] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 02:58:08] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 02:58:08] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 02:58:08] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 02:58:08] [DEBUG] BlockDatabase:50 - Load database station.radio1
+[2018-04-21 02:58:08] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 02:58:08] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 02:58:08] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 03:15:09] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 03:15:09] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 03:15:10] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 03:15:10] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 03:15:10] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 03:15:10] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 03:15:10] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 03:15:10] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 03:15:10] [DEBUG] BlockDatabase:50 - Load database station.radio1
+[2018-04-21 03:15:10] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 03:15:10] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 03:15:10] [DEBUG] BlockDatabase:204 - Deleted station DB radio1
+[2018-04-21 03:15:10] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 03:21:19] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 03:21:19] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 03:21:19] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 03:21:19] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 03:21:19] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 03:21:19] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 03:21:19] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 03:21:19] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 03:21:19] [DEBUG] BlockDatabase:50 - Load database station.coldplay
+[2018-04-21 03:21:19] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 03:21:19] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 03:21:19] [DEBUG] BlockDatabase:204 - Deleted station DB coldplay
+[2018-04-21 03:21:19] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 03:41:15] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 03:41:15] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 03:41:16] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 03:41:16] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 03:41:16] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 03:41:16] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 03:41:16] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 03:41:16] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 03:41:16] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 03:41:16] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 03:41:16] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 03:41:16] [DEBUG] BlockDatabase:204 - Deleted station DB music
+[2018-04-21 03:41:16] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 03:51:31] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 03:51:31] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 03:51:31] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 03:51:31] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 03:51:31] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 03:51:31] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 03:51:31] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 03:51:31] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 03:51:31] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 03:51:31] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 03:51:31] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 09:35:23] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 09:35:23] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 09:35:23] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 09:35:23] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 09:35:23] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 09:35:23] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 09:35:23] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 09:35:23] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 09:35:23] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 09:35:23] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 09:35:23] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 09:35:23] [DEBUG] BlockDatabase:204 - Deleted station DB music
+[2018-04-21 09:35:23] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 09:50:46] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 09:50:46] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 09:50:46] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 09:50:46] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 09:50:46] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 09:50:46] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 09:50:46] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 09:50:46] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 09:50:46] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 09:50:46] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 09:50:46] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 09:50:46] [DEBUG] BlockDatabase:204 - Deleted station DB music
+[2018-04-21 09:50:46] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 09:52:14] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 09:52:14] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 09:52:14] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 09:52:14] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 09:52:14] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 09:52:14] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 09:52:14] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 09:52:14] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 09:52:14] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 09:52:14] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 09:52:14] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 09:57:33] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 09:57:33] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 09:57:33] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 09:57:33] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 09:57:33] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 09:57:33] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 09:57:33] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 09:57:33] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 09:57:33] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 09:57:33] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 09:57:33] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 09:57:33] [DEBUG] BlockDatabase:204 - Deleted station DB music
+[2018-04-21 09:57:33] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 10:11:23] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 10:11:23] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 10:11:24] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 10:11:24] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 10:11:24] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 10:11:24] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 10:11:24] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 10:11:24] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 10:11:24] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 10:11:24] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 10:11:24] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 10:11:24] [DEBUG] BlockDatabase:204 - Deleted station DB music
+[2018-04-21 10:11:24] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 10:37:10] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 10:37:10] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 10:37:10] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 10:37:10] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 10:37:10] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 10:37:10] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 10:37:10] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 10:37:10] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 10:37:10] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 10:37:10] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 10:37:10] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 10:37:10] [DEBUG] BlockDatabase:204 - Deleted station DB music
+[2018-04-21 10:37:10] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 10:41:32] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 10:41:32] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 10:41:33] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 10:41:33] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 10:41:33] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 10:41:33] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 10:41:33] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 10:41:33] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 10:41:33] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 10:41:33] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 10:41:33] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 10:45:00] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 10:45:00] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 10:45:00] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 10:45:00] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 10:45:00] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 10:45:00] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 10:45:00] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 10:45:00] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 10:45:00] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 10:45:00] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 10:45:00] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 10:45:00] [DEBUG] BlockDatabase:204 - Deleted station DB music
+[2018-04-21 10:45:00] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 12:15:00] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 12:15:00] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 12:15:00] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 12:15:00] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 12:15:00] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 12:15:00] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 12:15:00] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 12:15:00] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 12:15:00] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 12:15:00] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 12:15:00] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 12:23:14] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 12:23:14] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 12:23:14] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 12:23:14] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 12:23:14] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 12:23:14] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 12:23:14] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 12:23:14] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 12:23:14] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 12:23:14] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 12:23:14] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 12:23:14] [DEBUG] BlockDatabase:204 - Deleted station DB music
+[2018-04-21 12:23:14] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 12:25:52] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 12:25:52] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 12:25:52] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 12:25:52] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 12:25:52] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 12:25:52] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 12:25:52] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 12:25:52] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 12:25:52] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 12:25:52] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 12:25:52] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 12:25:52] [DEBUG] BlockDatabase:204 - Deleted station DB music
+[2018-04-21 12:25:52] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 12:26:48] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 12:26:48] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 12:26:48] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 12:26:48] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 12:26:48] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 12:26:48] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 12:26:48] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 12:26:48] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 12:26:48] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 12:26:48] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 12:26:48] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 13:31:47] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 13:31:47] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 13:31:47] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 13:31:47] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 13:31:47] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 13:31:47] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 13:31:47] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 13:31:47] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 13:31:47] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 13:31:47] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 13:31:47] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 13:31:47] [DEBUG] BlockDatabase:213 - Deleted station DB music
+[2018-04-21 13:31:47] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 13:35:44] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 13:35:44] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 13:35:44] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 13:35:44] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 13:35:44] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 13:35:44] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 13:35:44] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 13:35:44] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 13:35:44] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 13:35:44] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 13:35:44] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 13:37:28] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 13:37:28] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 13:37:28] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 13:37:28] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 13:37:28] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 13:37:28] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 13:37:28] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 13:37:28] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 13:37:28] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 13:37:28] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 13:37:28] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 13:39:56] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 13:39:56] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 13:39:56] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 13:39:56] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 13:39:56] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 13:39:56] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 13:39:56] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 13:39:56] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 13:39:56] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 13:39:56] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 13:39:56] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 13:42:01] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 13:42:01] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 13:42:01] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 13:42:01] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 13:42:01] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 13:42:01] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 13:42:01] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 13:42:01] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 13:42:01] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 13:42:01] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 13:42:01] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 13:52:20] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 13:52:20] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 13:52:20] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 13:52:20] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 13:52:20] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 13:52:20] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 13:52:20] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 13:52:20] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 13:52:20] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 13:52:20] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 13:52:20] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 13:52:20] [DEBUG] BlockDatabase:215 - Deleted station DB music
+[2018-04-21 13:52:20] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 14:41:59] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 14:41:59] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 14:41:59] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 14:41:59] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 14:41:59] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 14:41:59] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 14:41:59] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 14:41:59] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 14:41:59] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 14:41:59] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 14:41:59] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 15:03:00] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 15:03:00] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 15:03:00] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 15:03:00] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 15:03:00] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 15:03:00] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 15:03:00] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 15:03:00] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 15:03:00] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 15:03:00] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 15:03:00] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 15:03:00] [DEBUG] BlockDatabase:217 - Deleted station DB music
+[2018-04-21 15:03:00] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 15:16:08] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 15:16:08] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 15:16:08] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 15:16:08] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 15:16:08] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 15:16:08] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 15:16:08] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 15:16:08] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 15:16:08] [DEBUG] BlockDatabase:50 - Load database station.music
+[2018-04-21 15:16:08] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 15:16:08] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 15:16:08] [DEBUG] BlockDatabase:217 - Deleted station DB music
+[2018-04-21 15:16:08] [INFO ] Destructor:38 - OK. End destructor
+[2018-04-21 15:36:58] [INFO ] Settings:19 - "destructor.properties" was loaded correctly
+[2018-04-21 15:36:58] [INFO ] Destructor:9 - Desruct all Queues and Databases
+[2018-04-21 15:36:58] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_REQUEST
+[2018-04-21 15:36:58] [INFO ] CommunicationWrapper:124 - Deleted queue ADMIN_RESPONSE
+[2018-04-21 15:36:58] [INFO ] CommunicationWrapper:124 - Deleted queue RADIO
+[2018-04-21 15:36:58] [INFO ] CommunicationWrapper:124 - Deleted queue CLIENT
+[2018-04-21 15:36:58] [INFO ] Destructor:28 - DBs cleaned
+[2018-04-21 15:36:58] [INFO ] Settings:19 - "../database.properties" was loaded correctly
+[2018-04-21 15:36:58] [INFO ] FileCellBlock:85 - Cleaned file '../.database/connection'
+[2018-04-21 15:36:58] [INFO ] FileCellBlock:85 - Cleaned file '../.database/user'
+[2018-04-21 15:36:58] [INFO ] Destructor:38 - OK. End destructor

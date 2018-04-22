@@ -1,0 +1,12 @@
+rootProject.name = 'onlineradio'
+include 'broadcast', 'station' , 'communication-wrapper'
+include 'radio-listener'
+include 'dummy'
+include 'user-gestor'
+include 'database'
+include 'initializer'
+include 'destructor'
+include 'admin-handler'
+include 'admin'
+include 'settings'
+

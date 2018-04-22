@@ -1,0 +1,24 @@
+FUNCIONALES
+    ● Se debe monitorear un archivo de log de servidores Apache redirigido a la entrada
+    standard de la aplicación.
+
+    ● Es necesario relevar las líneas de log de forma constante para identificar estadísticas con: cantidad de requests por segundo,
+    requests por cliente, cantidad de errores, 10 recursos más pedidos.
+
+    ● Se deben identificar los mensajes de error con más repeticiones.
+
+    ● La aplicación se debe detener si se detecta un cierre del archivo de log o la señal de interrupción control+C.
+
+NO FUNCIONALES
+    ● La aplicación debe priorizar la recepción de la entrada de logs entodo momento y ejecutar el análisis en paralelo.
+
+    ● Utilizar cantidades controladas de hilos (revisar necesidad de Thread Pools)
+
+    ● Se deben mostrar las estadísticas por pantalla con una frecuencia de 1 minuto.
+
+    ● Se debe realizar una descarga de todas las entradas de log recibidas a un archivo.
+
+    ● Se debe realizar una descarga de los mensajes de error en otro archivo de texto, incluyendo únicamente fecha y mensaje.
+
+    ● El almacenamiento de datos y entidades del sistema se puede realizar utilizando algún esquema simple
+    de serialización (no es foco del TP el uso eficiente de la persistencia).

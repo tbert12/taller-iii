@@ -1,0 +1,15 @@
+ARGS=""
+PROJECT=$1
+ARG1=$2
+ARG2=$3
+if [ -n "$ARG1" ]; then
+    ARGS="-Parg1=$ARG1"
+    if [ -n "$ARG2" ]; then
+        ARGS="$ARGS -Parg2=$ARG2"
+    fi
+fi
+
+GRADLE_ARGS="--console=plain --quiet"
+
+./gradlew $1:run $GRADLE_ARGS $ARGS
+
