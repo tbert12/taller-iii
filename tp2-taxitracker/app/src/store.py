@@ -1,15 +1,18 @@
-from google.cloud import datastore
+from google.appengine.ext import ndb
 
-datastore_client = datastore.Client()
+class Taxi(ndb.Model):
+    taxi_id = ndb.IntegerProperty()
+
+class Travel(ndb.Model):
+    
 
 def register_taxi(name):
     # Generate new Entity with taxi driver. return id
-    key = dat
-    datastore_client.put()
+    return True
 
 def track_travel(**kwargs):
     # Generate new Entity with data to travel. return bool
-
+    return True
 
 def get_billing(taxi_id):
     # TODO: Memcache (?)

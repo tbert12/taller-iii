@@ -1,0 +1,8 @@
+<h2>Number of travels per day</h2>
+<button ng-click="invite()">ADMIN</button>
+<div ng-repeat="stat in stats">
+    <!-- TODO:  date | #travel-->
+    <button ng-click="delete(guest)">delete</button>
+    <button ng-click="update(guest)">update</button>
+    {{ $index + 1 }}. <b>{{ guest.first }} {{ guest.last }}</b>
+</div>
