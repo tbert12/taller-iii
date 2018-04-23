@@ -1,0 +1,12 @@
+<h2>Search travels</h2>
+<!-- TODO Filters -->
+
+<div ng-repeat="stat in stats">
+    <!-- TODO:  table taxi_id | date | #travel-->
+    <table infinite-scroll="load()" infinite-scroll-container='".class"'>
+        <tr ng-repeat="item in items">
+            <td>Number</td>
+            <td>{{item.number}}</td>
+        </tr>
+    </table>
+</div>
