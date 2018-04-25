@@ -39,27 +39,24 @@ public class ErrorFrequencyCollector extends ThreadActivity {
     }
 
     private void generateTopErrorFile(List<String> errors) {
-        try {
-            PrintWriter writer = new PrintWriter(new FileWriter(outputLog));
+        try (PrintWriter writer = new PrintWriter(new FileWriter(outputLog))) {
             for (String line : errors) {
                 writer.write(line + "\n");
             }
-            writer.close();
-            logger.info("Generated " + outputLog);
+            super.getLogger().info("Generated " + outputLog);
         } catch (IOException e) {
-
-            logger.warn("Cannot write in file [" + outputLog + "]");
-            logger.debug(e);
+            super.getLogger().fatal("Cannot write in file [" + outputLog + "]", e);
+            super.getWorkExecutor().end();
         }
     }
 
-    private List<String> readFile(String path) {
+    private List<String> readFileIfExist(String path) {
         try {
             if (new File(path).exists()) {
                 return Files.readAllLines(Paths.get(path));
             }
         } catch (IOException e) {
-            logger.warn("Cannot read file [" + path + "] to collect frequencies");
+            super.getLogger().warn("Cannot read file [" + path + "] to collect frequencies", e);
         }
         return new ArrayList<>();
     }
@@ -67,12 +64,12 @@ public class ErrorFrequencyCollector extends ThreadActivity {
     private HashMap<String,Integer> collectErrors() {
         HashMap<String, Integer> errorCount = new HashMap<>();
         fileManager.workOverFiles( fileName -> {
-            logger.debug("Take lock on " + fileName);
-            readFile(fileName).forEach(s -> {
+            super.getLogger().debug("Take lock on " + fileName);
+            readFileIfExist(fileName).forEach(s -> {
                 String[] parts = s.split("==", 2);
                 errorCount.put(parts[1], Integer.parseInt(parts[0].trim()));
             });
-            logger.debug("Free " + fileName);
+            super.getLogger().debug("Free " + fileName);
             return true;
         });
         return errorCount;

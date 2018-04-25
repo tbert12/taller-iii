@@ -1,8 +1,5 @@
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 import org.apache.log4j.*;
 
@@ -31,15 +28,10 @@ public class WorkExecutor {
         workers.add(new Thread(runnableWorker));
     }
 
-    public void addWorker(Callable<Runnable> runneableCreator, int clons) {
+    public void addWorker(Callable<Runnable> runneableCreator, int clons) throws Exception {
         for (int i = 0; i < clons; i++) {
-            try {
-                Runnable runnable = runneableCreator.call();
-                addWorker(runnable);
-            } catch (Exception e) {
-                Logger.getLogger(WorkExecutor.class).warn("Cannot create Runnable to append in work executor. Ignoring it.");
-            }
-
+            Runnable runnable = runneableCreator.call();
+            addWorker(runnable);
         }
     }
 

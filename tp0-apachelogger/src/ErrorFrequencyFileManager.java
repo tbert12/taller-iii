@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 import java.util.function.Function;
@@ -6,16 +7,17 @@ import java.util.function.Function;
 import org.apache.log4j.*;
 
 public class ErrorFrequencyFileManager {
+    private static final Logger LOGGER = Logger.getLogger(ErrorFrequencyFileManager.class);
     private volatile ArrayList<Object> filesMutex;
     private final String workingDir;
-    ErrorFrequencyFileManager(String workingDir, int maxFiles) {
+    ErrorFrequencyFileManager(String workingDir, int maxFiles) throws IOException {
         Logger logger = Logger.getLogger(ErrorFrequencyFileManager.class);
         this.workingDir = workingDir;
         if (createPath()) {
             logger.info("Created working directory (" + workingDir + ")");
         } else {
             logger.fatal("Cannot craeate working directory (" + workingDir + ").");
-            System.exit(1);
+            throw new IOException("Cannot create directory");
         }
         filesMutex = new ArrayList<>();
         for (int i = 0; i < maxFiles; i++) {
@@ -42,10 +44,10 @@ public class ErrorFrequencyFileManager {
             try {
                 Boolean result = work.apply(workingDir + fileName);
                 if (!result) {
-                    Logger.getLogger(ErrorFrequencyFileManager.class).debug("Work returned `False`");
+                    LOGGER.debug("Work returned `False`");
                 }
             } catch (Exception e) {
-                Logger.getLogger(ErrorFrequencyFileManager.class).warn("Exception when working over file",e);
+                LOGGER.warn("Exception when working over file",e);
             }
         }
     }

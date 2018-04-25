@@ -23,12 +23,12 @@ public class StatViewer extends ThreadActivity {
         stats.reset();
 
         StringBuilder msg = new StringBuilder()
-                .append("\n\t- Request per seconds ").append((float) statsSummary.requests / (float) pollSeconds)
-                .append("\n\t- Request per client ").append(statsSummary.requestPerClient)
-                .append("\n\t- Errors ").append(statsSummary.errors)
+                .append("\n\t- Request per seconds ").append((float) statsSummary.getRequests() / (float) pollSeconds)
+                .append("\n\t- Request per client ").append(statsSummary.getRequestPerClient())
+                .append("\n\t- Errors ").append(statsSummary.getErrors())
                 .append("\n\t- Most request resource");
-        statsSummary.topResource.forEach(s -> msg.append("\n\t\t").append(s));
-        logger.info("STATS SUMMARY:" + msg.toString());
+        statsSummary.getTopResource().forEach(s -> msg.append("\n\t\t").append(s));
+        super.getLogger().info("STATS SUMMARY:" + msg.toString());
 
         Thread.sleep(1000 * pollSeconds);
         return true;

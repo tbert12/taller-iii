@@ -26,8 +26,8 @@ public class Reader extends ThreadActivity {
             2.2. Send to Logger clon
         */
         if (!stdinScanner.hasNextLine()) {
-            logger.info("EOF Detected. Closing...");
-            workExecutor.end();
+            super.getLogger().info("EOF Detected. Closing...");
+            super.getWorkExecutor().end();
             return false;
         }
         String log = stdinScanner.nextLine();
@@ -36,12 +36,7 @@ public class Reader extends ThreadActivity {
             parserQueue.put(logEntry);
             dumperQueue.put(new ApacheLogEntry(logEntry));
         } else {
-            logger.info("Ignoring line\n'" + log + "'");
-        }
-        //NOTE: To Debug
-        if (logger.isDebugEnabled()) {
-            //logger.debug("Sleep Reader to DEBUG System");
-            Thread.sleep(100 + (new Random()).nextInt(300));
+            super.getLogger().info("Ignoring line\n'" + log + "'");
         }
         return true;
     }

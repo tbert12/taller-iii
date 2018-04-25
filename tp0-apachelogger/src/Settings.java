@@ -1,31 +1,21 @@
 import org.apache.log4j.Logger;
 
 import java.io.*;
-import java.nio.file.Files;
 import java.util.Properties;
 
 public class Settings {
+    private static final Logger LOGGER = Logger.getLogger(Settings.class);
     private final Properties properties;
     private Settings() {
         properties = new Properties();
     }
 
     public static Settings fromProperties(String propertiesFile) {
-        InputStream input = null;
         Settings settings = new Settings();
-        try {
-            input = new FileInputStream(propertiesFile);
+        try (FileInputStream input = new FileInputStream(propertiesFile)){
             settings.properties.load(input);
-        } catch (IOException ex) {
-            System.out.println("[ERROR] Cannot load " + propertiesFile + " using default properties");
-        } finally {
-            if (input != null) {
-                try {
-                    input.close();
-                } catch (IOException e) {
-                    System.out.println("[WARNING] IOException when attemp to close " + propertiesFile);
-                }
-            }
+        } catch (IOException e) {
+            LOGGER.warn("[ERROR] Cannot load " + propertiesFile + " using default properties", e);
         }
         return settings;
     }

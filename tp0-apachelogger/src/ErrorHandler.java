@@ -4,7 +4,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.concurrent.ArrayBlockingQueue;
-import org.apache.log4j.*;
 
 public class ErrorHandler extends ThreadActivity {
     private final ArrayBlockingQueue<ApacheLogEntry> parserQueue;
@@ -16,14 +15,14 @@ public class ErrorHandler extends ThreadActivity {
         super(settings, workExecutor);
         this.parserQueue = parserQueue;
         this.errorFrequencyQueue = errorFreqQueue;
-        errorWriter = new PrintWriter(new FileWriter(super.settings.errorLogFile()));
+        errorWriter = new PrintWriter(new FileWriter(super.getSettings().errorLogFile()));
     }
 
     private void writeError(String errorLineLog) {
         errorWriter.write(errorLineLog);
         errorWriter.write("\n");
         if (errorWriter.checkError()) {
-            logger.warn("Error on write line in apache_error.log");
+            super.getLogger().warn("Error on write line in apache_error.log");
         }
     }
 

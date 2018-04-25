@@ -4,7 +4,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.concurrent.ArrayBlockingQueue;
-import org.apache.log4j.*;
 
 public class Dumper extends ThreadActivity {
     private final ArrayBlockingQueue<ApacheLogEntry> readerQueue;
@@ -13,14 +12,14 @@ public class Dumper extends ThreadActivity {
     Dumper(ArrayBlockingQueue<ApacheLogEntry> readerQueue, Settings settings, WorkExecutor workExecutor) throws IOException {
         super(settings, workExecutor);
         this.readerQueue = readerQueue;
-        dumperFile = new PrintWriter(new FileWriter(super.settings.dumperLogFile()));
+        dumperFile = new PrintWriter(new FileWriter(super.getSettings().dumperLogFile()));
     }
 
     private void writeLine(String line) {
         dumperFile.write(line);
         dumperFile.write("\n");
         if (dumperFile.checkError()) {
-            logger.warn("Error on write line");
+            super.getLogger().warn("Error on write line");
         }
     }
 

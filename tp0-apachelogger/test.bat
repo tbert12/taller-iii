@@ -12,7 +12,7 @@ REM     2. Dumpers errors and log_file (same line count)
 REM     3. Volume with task admin.
 
 
-FOR /L %%G IN (1,1,1) do ( type enunciado\Apache-logs-samples\log ) >> test_log.temp
-REM                ^-- number of copies
+FOR /L %%G IN (1,1,100) do ( type enunciado\Apache-logs-samples\log ) >> test_log.temp
+                ^-- number of copies
 type test_log.temp | java -jar out\artifacts\TP0_ApacheLogger_jar\TP0-ApacheLogger.jar
 del /s/q test_log.temp

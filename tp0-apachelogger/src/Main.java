@@ -8,19 +8,7 @@ import org.apache.log4j.*;
 
 
 public class Main {
-    public static void main(String[] args)  {
-        Settings settings = Settings.fromProperties("config.properties");
-        WorkExecutor workExecutor = new WorkExecutor();
-
-        PropertyConfigurator.configure("log4j.properties");
-        Logger logger = Logger.getLogger(Main.class);
-
-        // 0. Signal handler to detect CTRL-C and do graceful quit
-        Signal.handle(new Signal("INT"), sig -> {
-            logger.info("CTRL+C Detected. Closing...");
-            workExecutor.end();
-        });
-
+    private static void createQueuesAndWorkers(WorkExecutor workExecutor, Settings settings) throws Exception {
         // 1. Create Queues
         int queueCapacity = settings.queueSize();
         ArrayBlockingQueue<ApacheLogEntry> parserQueue           = new ArrayBlockingQueue<>(queueCapacity);
@@ -37,17 +25,12 @@ public class Main {
                 () -> new Parser(parserQueue, statsQueue, errorHandlerQueue, settings, workExecutor),
                 settings.numberParserWorkers()
         );
-        try {
-            workExecutor.addWorker(
-                    new Dumper(dumperQueue, settings, workExecutor)
-            );
-            workExecutor.addWorker(
-                    new ErrorHandler(errorHandlerQueue, errorFreqQueue, settings, workExecutor)
-            );
-        } catch (IOException e) {
-            logger.fatal("Error on create ErrorHandler and Dumper file. Aborting");
-            System.exit(1);
-        }
+        workExecutor.addWorker(
+                new Dumper(dumperQueue, settings, workExecutor)
+        );
+        workExecutor.addWorker(
+                new ErrorHandler(errorHandlerQueue, errorFreqQueue, settings, workExecutor)
+        );
         ErrorFrequencyFileManager fileManager = new ErrorFrequencyFileManager(
                 settings.errorFrequencyWorkDir(), settings.errorFrequencyMaxFiles()
         );
@@ -66,6 +49,28 @@ public class Main {
         workExecutor.addWorker(
                 new StatViewer(settings, stats, workExecutor)
         );
+    }
+
+    public static void main(String[] args)  {
+        Settings settings = Settings.fromProperties("config.properties");
+        WorkExecutor workExecutor = new WorkExecutor();
+
+        PropertyConfigurator.configure("log4j.properties");
+        Logger logger = Logger.getLogger(Main.class);
+
+        // 0. Signal handler to detect CTRL-C and do graceful quit
+        Signal.handle(new Signal("INT"), sig -> {
+            logger.info("CTRL+C Detected. Closing...");
+            workExecutor.end();
+        });
+
+        // 1. Create workers
+        try {
+            createQueuesAndWorkers(workExecutor, settings);
+        } catch (Exception e) {
+            logger.fatal("Cannot create workers", e);
+            System.exit(1);
+        }
 
         // 3. Run Threads
         workExecutor.startWork();
