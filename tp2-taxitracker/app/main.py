@@ -1,10 +1,11 @@
 from flask import Flask, request, jsonify
 from src import store
 import logging
+import config
 
 app = Flask(__name__)
 
-DEFAULT_PAGE_SIZE = 10
+DEFAULT_PAGE_SIZE = config.store["DEFAULT_PAGE_SIZE"]
 
 @app.before_request
 def enable_local_error_handling():

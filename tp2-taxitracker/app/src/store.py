@@ -1,12 +1,13 @@
 from google.appengine.ext import ndb
+from google.appengine.api import memcache
 from google.appengine.api import taskqueue
 import json
 import logging
 import model
 import datetime
+import config
 
 def register_taxi(vendorID):
-    # Generate new Entity with taxi driver. return id
     logging.info("Register taxi")
     taxi = model.Taxi(
         id = vendorID,
@@ -18,7 +19,7 @@ def register_taxi(vendorID):
 def add_task_travel_queue(args):
     travel_count_queue = taskqueue.Queue('travels-count-queue')
     tasks = []
-    tasks.append( taskqueue.Task(payload="one travel", method='PULL') )
+    tasks.append( taskqueue.Task(payload="dummy: one travel", method='PULL') )
     travel_count_queue.add(tasks)
     if 'vendorID' in args and 'total' in args:
         billing_queue = taskqueue.Queue('billing-queue')
@@ -78,18 +79,30 @@ def add_billing(data):
 
 def get_billing(vendorID):
     logging.info("Get billing of {}".format(vendorID))
+    cache = memcache.get(str(vendorID))
+    if (cache != None):
+        return cache, "Billing for today ({}) of vendorID: {}".format(str(day_billing.date), vendorID)
     day_billing = _get_billing(vendorID = vendorID)
     if day_billing != None:
+        memcache.add(str(vendorID), day_billing.total, config.store["MEMCACHE_BILLING_EXPIRATION_SEC"])
         return day_billing.total, "Billing for today ({}) of vendorID: {}".format(str(day_billing.date), vendorID)
     return 0, "Invalid vendorID {}".format(vendorID)
+
+def get_stats_memcachekey(page_size, cursor):
+    return "stats:page_size-{}:cursor-{}".format(page_size,"init" if cursor == None else cursor)
 
 def get_stats(args):
     logging.info("Get Stats")
     
-    # TODO: Check if in memcache or Datastore
-    
-    page_size = args['page_size'] if 'page_size' in args else 10
+    page_size = args['page_size'] if 'page_size' in args else config.store["DEFAULT_PAGE_SIZE"]
     cursor = args['cursor'] if 'cursor' in args  else None
+    
+    cache_key = get_stats_memcachekey(page_size, cursor)
+    cache = memcache.get(cache_key)
+    if (cache != None):
+        logging.info("Read stats from MemCache")
+        return cache
+
     query = model.DayTravelCounter.query().order(-model.DayTravelCounter.date, model.DayTravelCounter.key)
     if (cursor == None):
         result, more_cursor, more = query.fetch_page(page_size)
@@ -97,17 +110,18 @@ def get_stats(args):
         result, more_cursor, more = query.fetch_page(page_size, start_cursor = ndb.Cursor.from_websafe_string(cursor) )
     more_cursor = more_cursor.to_websafe_string() if more else None
     
-    # TODO: Store next two pages
-
-    return {
+    to_return = {
         'stats' : [r.to_dict() for r in result], 
         'cursor' : more_cursor
     }
 
+    memcache.add(cache_key, to_return, confi.store["MEMCACHE_STATS_EXPIRATION_SEC"])
+    logging.info("Stored stats in MemCache")
+
+    return to_return
+
 def get_admin_stats(args):
     logging.info("Get admin stats")
-    
-    # TODO: Check if in Memcache
 
     page_size = args['page_size'] if 'page_size' in args else 10
     cursor = args['cursor'] if 'cursor' in args else None
@@ -125,7 +139,6 @@ def get_admin_stats(args):
         result, more_cursor, more = query.fetch_page(page_size, start_cursor = ndb.Cursor.from_websafe_string(cursor) )
     more_cursor = more_cursor.to_websafe_string() if more else None
     
-    # TODO: Store next in memcache
 
     return {
         'stats' : [ r.to_dict() for r in result ], 
@@ -134,7 +147,6 @@ def get_admin_stats(args):
 
 
 def add_travels_count(count):
-    # Update store
     logging.info("Adding {} travels to day count".format(count))
     if count == 0:
         return

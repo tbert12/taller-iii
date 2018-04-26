@@ -3,6 +3,7 @@ import json
 from google.appengine.api import taskqueue
 from src import store
 import logging
+import config
 
 app = Flask(__name__)
 
@@ -16,7 +17,9 @@ def counter():
     logging.info("Add counter day task")
     queue = taskqueue.Queue('travels-count-queue')
 
-    tasks = queue.lease_tasks(20, 100) # Take 100 tasks for 20 sec
+    conf = config.task["travel_counter"]
+
+    tasks = queue.lease_tasks(conf["LEASE_TASK_TIME_SEC"], conf["LEASE_TASK_COUNT"]) # Take 100 tasks for 20 sec
 
     store.add_travels_count(len(tasks))
 
@@ -28,7 +31,8 @@ def billing_accumulator():
     logging.info("Billing accumulator")
     queue = taskqueue.Queue('billing-queue')
 
-    tasks = queue.lease_tasks(100, 100)
+    conf = config.task["billing_accumulator"]
+    tasks = queue.lease_tasks(conf["LEASE_TASK_TIME_SEC"], conf["LEASE_TASK_COUNT"])
 
     for task in tasks:
         store.add_billing(json.loads(task.payload))

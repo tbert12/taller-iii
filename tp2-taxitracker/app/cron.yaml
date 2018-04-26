@@ -1,11 +1,11 @@
 cron:
 - description: "Travels day counter"
   url: /task/_travel_counter
-  schedule: every 60 mins
-  #schedule: every 24 hours
+  #schedule: every 60 mins
+  schedule: every 24 hours
   
 - description: "Travels day billing"
   url: /task/_billing_accumulator
-  schedule: every 2 hours
-  #schedule: every 24 hours
+  #schedule: every 2 hours
+  schedule: every 24 hours
   

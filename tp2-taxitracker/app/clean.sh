@@ -1,1 +1,1 @@
-rm -rf *.pyc
+rm -rf *.pyc src/*.pyc
