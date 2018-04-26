@@ -1,8 +1,25 @@
-<h2>Number of travels per day</h2>
-<button ng-click="invite()">ADMIN</button>
-<div ng-repeat="stat in stats">
-    <!-- TODO:  date | #travel-->
-    <button ng-click="delete(guest)">delete</button>
-    <button ng-click="update(guest)">update</button>
-    {{ $index + 1 }}. <b>{{ guest.first }} {{ guest.last }}</b>
+<h2 class="md-display-1">Number of travels per day</h2>
+<md-button style="position: absolute; right: 10px; bottom: 10px;" class="md-fab" ng-click="goToAdmin()">
+    ADM
+</md-button>
+<!-- TODO:  date | #travel-->
+<div style="width: 100%; text-align: center;">
+<table infinite-scroll="loadStats()" infinite-scroll-disabled="_end" class="md-table" style="width: 60%; margin: 0 auto; border-spacing: 0;">
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="stat in stats">
+            <td>{{stat.date}}</td>
+            <td>{{stat.count}}</td>
+        </tr>
+        <tr ng-show="loading" ng-repeat="i in [1, 2, 3, 4]">
+            <td><div class="loading-row parpadea" style="width: 250px;"></div></td>
+            <td><div class="loading-row parpadea" style="width: 30px;"></div></td>
+        </tr>
+    </tbody>
+</table>
 </div>

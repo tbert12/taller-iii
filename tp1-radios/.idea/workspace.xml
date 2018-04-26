@@ -2,24 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bf48384-a356-423a-9716-0a6004637794" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.database/connection" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.database/stations/station.music" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.database/user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/Dumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/Dumper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/ErrorFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/ErrorFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/ErrorFrequencyCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/ErrorFrequencyCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/ErrorFrequencyFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/ErrorFrequencyFileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/ErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/StatViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/StatViewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/StatsSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/StatsSummary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/ThreadActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/ThreadActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/WorkExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/WorkExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp0-apachelogger/src/Wrapper/ApacheLogEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp0-apachelogger/src/Wrapper/ApacheLogEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-handler/AdminHandler.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Admin.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/broadcast/Broadcast.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/destructor/Destructor.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dummy/Dummy.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/initializer/Initializer.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/radio-listener/RadioListener.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/station/Station.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-gestor/Connections.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-gestor/UserGestor.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp2-taxitracker/app/src/store.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tp2-taxitracker/app/src/store.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp2-taxitracker/app/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tp2-taxitracker/app/static/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp2-taxitracker/app/static/view/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tp2-taxitracker/app/static/view/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broadcast/build/classes/java/main/Broadcast.class" beforeDir="false" afterPath="$PROJECT_DIR$/broadcast/build/classes/java/main/Broadcast.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -143,7 +146,7 @@
       <file leaf-file-name="RadioListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/radio-listener/src/main/java/RadioListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="2527">
               <caret line="146" column="38" selection-start-line="146" selection-start-column="38" selection-end-line="146" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -152,9 +155,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
@@ -2713,7 +2729,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -2727,17 +2743,23 @@
               <item name="tp1-radios" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="gradle" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="onlineradio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp1-radios" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tp0-apachelogger" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -2978,8 +3000,18 @@
       <workItem from="1524056920738" duration="30744000" />
       <workItem from="1524136724512" duration="26889000" />
       <workItem from="1524242167587" duration="40577000" />
-      <workItem from="1524517073235" duration="561000" />
+      <workItem from="1524517073235" duration="908000" />
+      <workItem from="1524670916465" duration="64000" />
+      <workItem from="1524671068754" duration="815000" />
     </task>
+    <task id="LOCAL-00001" summary="Clean log radio listener">
+      <created>1524517807944</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524517807944</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2988,7 +3020,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201151000" />
+    <option name="totallyTimeSpent" value="202377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1920" height="1014" extended-state="6" />
@@ -3001,25 +3033,25 @@
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32959402" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32801822" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.38584474" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32801822" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3847032" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24626069" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25160256" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.33561644" />
       <window_info anchor="right" id="Database" order="7" weight="0.32959402" />
       <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.14690171" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32915717" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.33599088" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -3032,6 +3064,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Clean log radio listener" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean log radio listener" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -3042,23 +3078,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/Entities/UserActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16017">
-          <caret line="843" selection-start-line="843" selection-end-line="843" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/communication-wrapper/src/main/java/Message/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -3185,11 +3204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1943">
           <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9554#9555#0" expanded="true" />
-            <element signature="e#9594#9595#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3218,13 +3232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
@@ -3264,16 +3271,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/radio-listener/RadioListener.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/Admin.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-808" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/radio-listener/RadioListener.log" />
+    <entry file="file://$PROJECT_DIR$/admin/Admin.log" />
     <entry file="file://$PROJECT_DIR$/admin/admin.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -3295,19 +3294,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-gestor/UserGestor.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7510" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/user-gestor/UserGestor.log" />
     <entry file="file://$PROJECT_DIR$/database/src/main/java/Entities/UserListenCount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
           <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding>
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3357,9 +3348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="164" column="17" selection-start-line="164" selection-start-column="17" selection-end-line="164" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3413,7 +3401,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/radio-listener/src/main/java/RadioListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="2527">
           <caret line="146" column="38" selection-start-line="146" selection-start-column="38" selection-end-line="146" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3421,8 +3409,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/communication-wrapper/out/production/classes/CommunicationWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1197">
+          <folding>
+            <element signature="e#0#3068#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

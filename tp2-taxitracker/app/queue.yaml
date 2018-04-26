@@ -1,0 +1,6 @@
+queue:
+- name: travels-count-queue
+  mode: pull
+  
+- name: billing-queue
+  mode: pull

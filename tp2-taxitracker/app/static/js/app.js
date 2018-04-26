@@ -1,5 +1,9 @@
+'use strict';
+
+var App = angular.module('App', ['ngRoute','ngMaterial']);
+
 App.config(function($routeProvider) {
-  let views = "/view";
+  let views = "/static/view";
   $routeProvider.when('/', {
     controller : 'MainCtrl',
     templateUrl: views + '/main.html',
@@ -14,66 +18,74 @@ App.config(function($routeProvider) {
   });
 });
 
-/*
-App.config(function($httpProvider) {
-  $httpProvider.interceptors.push('myHttpInterceptor');
-});
-*/
 App.controller('MainCtrl', function($scope, $rootScope, $log, $http, $routeParams, $location, $route) {
-
+  $rootScope.tittle = "Client";
   $scope.stats = [];
-  $scope._end = false;
+  
   $scope.goToAdmin = function() {
       $location.path('/admin');
   };
-  $scope.page = 1;
+  
+  $scope.loading = true;
+  $scope._end = false;
+  $scope.cursor = null;
   $scope.loadStats = function() {
-      if ($scope._end)
-          return;
-      let query = { page : $scope.page }
-      $http.get('/rest/stats', query)
-          .success(function(data, status, headers, config) {
-              $scope.stats.guests.push(data.stats);
-              $scope.page += 1
-              if (data._end) {
-                  $scope._end = true;
-              }
-          });
+      $scope.loading = true;
+      $http.get('/api/stats', { params: { cursor : $scope.cursor } })
+          .then(function(res) {
+              $scope.loading = false;
+              let data = res.data;
+              $scope.stats = $scope.stats.concat(data.stats);
+              $scope.cursor = data.cursor
+              $scope._end = data.cursor != null ? false : true;
+              console.log($scope._end);
+          }, function(error){
+              console.log("ERROR ON LOAD STATS");   
+              $scope.loading = false;
+          })
   }
+  $scope.loadStats();
 
 });
 
 App.controller('AdminCtrl', function($scope, $rootScope, $log, $http, $routeParams, $location, $route) {
-
-  $scope.filters = {
-      taxi_id : null,
-      date_from : null,
-      date_to : null,
-      page : 1
-  }
+  $rootScope.tittle = "Admin";
   
-  $scope._end = false;
+  $scope.goToMain = function() {
+      $location.path('/')
+  }
 
   $scope.stats = [];
 
+  $scope.filters = {
+    vendorID : null,
+    from_date : null,
+    to_date : null,
+    cursor : null
+  };
+  $scope._end = true;
+  $scope.loading = true;
+
+  $scope.applyFilter = function() {
+      $scope.stats = [];
+      $scope.loading = true;
+      $scope.loadAdminStats();
+  }
+
   $scope.loadAdminStats = function() {
-      if ($scope._end) {
-          return;
-      }
-      let query = {};
-      for (filter in $scope.filters) {
-          if ($scope.filters) {
-              query[filter] = $scope.filters[filter]
-          }
-      }
-      $http.get('/rest/admin_stats', query)
-          .success(function(data, status, headers, config) {
-              $scope.stats.guests.push(data.stats);
-              $scope.filters.page += 1
-              if (data._end) {
-                  $scope._end = true;
-              }
+      $scope.loading = true;
+      $http.get('/api/admin_stats', { params : $scope.filters })
+          .then(function(res) {
+              $scope.loading = false;
+              let data = res.data;
+              $scope.stats = $scope.stats.concat(data.stats);
+              $scope.filters.cursor = data.cursor
+              $scope._end = data.cursor === null ? true : false;
+          }, function(error) {
+              $scope.loading = false;
+              console.log("Error on load admin stats");
           });
   }
+  $scope.loadAdminStats();
 });
 

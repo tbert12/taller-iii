@@ -1,12 +1,58 @@
-<h2>Search travels</h2>
+<h2 class="md-display-1">Filter</h2>
 <!-- TODO Filters -->
 
-<div ng-repeat="stat in stats">
-    <!-- TODO:  table taxi_id | date | #travel-->
-    <table infinite-scroll="load()" infinite-scroll-container='".class"'>
-        <tr ng-repeat="item in items">
-            <td>Number</td>
-            <td>{{item.number}}</td>
-        </tr>
+<md-button style="position: absolute; right: 10px; bottom: 10px;" class="md-fab" ng-click="goToMain()">
+        CLI
+</md-button>
+
+<div style="width: 100%; text-align: center;">
+    <md-content layout-padding>
+    <div class="filters" layout-gt-xs="row">
+        <md-input-container class="md-block" flex-gt-xs>
+            <label>Taxi ID</label>
+            <input name="vendorID" ng-model="filters.vendorID" placeholder="1204" ng-pattern="/^[0-9]+$/" md-maxlength="10">
+
+        </md-input-container>
+        <div style="text-align: left;">
+            <md-datepicker ng-model="filters.from_date" md-placeholder="Enter date from" md-open-on-focus></md-datepicker>
+            <md-datepicker ng-model="filters.to_date" md-placeholder="Enter date to" md-open-on-focus></md-datepicker>
+            <md-button style="float: right;" class="md-raised" ng-click="applyFilter()">
+                    Filter
+            </md-button>
+        </div>
+
+    </div>
+    </md-content>
+    <table infinite-scroll="loadStats()" infinite-scroll-disabled="_end" class="md-table" style="width: 60%; margin: 0 auto; border-spacing: 0;">
+        <thead>
+            <tr>
+                <th>Taxi ID</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Geo</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="stat in stats">
+                <td>{{stat.taxi}}</td>
+                <td><b>{{stat.state}}</b></td>
+                <td>{{stat.amount ? "$" + stat.amount : "-"}}</td>
+                <td style="font-size: 10px;">
+                    <i>
+                        lat: {{stat.position.latitude}}<br/>
+                        lon: {{stat.position.longitude}}
+                    </i>
+                </td>
+                <td>{{stat.date}}</td>
+            </tr>
+            <tr ng-show="loading" ng-repeat="i in [1, 2, 3, 4]">
+                <td><div class="loading-row parpadea" style="width: 40px;"></div></td>
+                <td><div class="loading-row parpadea" style="width: 80px;"></div></td>
+                <td><div class="loading-row parpadea" style="width: 30px;"></div></td>
+                <td><div class="loading-row parpadea" style="width: 110px;"></div></td>
+                <td><div class="loading-row parpadea" style="width: 230px;"></div></td>
+            </tr>
+        </tbody>
     </table>
 </div>
