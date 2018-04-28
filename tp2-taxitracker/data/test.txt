@@ -1,0 +1,87 @@
+# Agrego 3 taxis
+{
+    "vendorID" : 1
+}
+
+{
+    "vendorID" : 2
+}
+
+{
+    "vendorID" : 3
+}
+
+
+# Agrego 2 track a taxi 1 y 1 track a taxi 2
+
+# Viaje 1 taxi 1
+{
+    "vendorID" : 1,
+    "type" : "PICKUP",
+    "date" : "2018-04-26 18:34:43",
+    "position" : {
+        latitude : 40.7444725036621,
+        longitude: -73.9730453491211
+    }
+}
+
+{
+    "vendorID" : 1,
+    "type" : "DROPOFF",
+    "date" : "2018-04-26 19:15:05",
+    "amount" : 142
+    "position" : {
+        latitude : 40.76572036743164,
+        longitude: -73.96308135986328
+    }
+}
+
+# Viaje 2 taxi 1
+{
+    "vendorID" : 1,
+    "type" : "PICKUP",
+    "date" : "2018-04-26 20:34:43",
+    "position" : {
+        latitude : 40.7444725036621,
+        longitude: -73.9730453491211
+    }
+}
+
+{
+    "vendorID" : 1,
+    "type" : "DROPOFF",
+    "date" : "2018-04-26 22:15:05",
+    "amount" : 58
+    "position" : {
+        latitude : 40.76572036743164,
+        longitude: -73.96308135986328
+    }
+}
+
+# Viaje 1 taxi 2
+{
+    "vendorID" : 2,
+    "type" : "PICKUP",
+    "date" : "2018-04-10 20:34:43",
+    "position" : {
+        latitude : 40.7444725036621,
+        longitude: -73.9730453491211
+    }
+}
+
+{
+    "vendorID" : 2,
+    "type" : "DROPOFF",
+    "date" : "2018-04-10 22:15:05",
+    "amount" : 23
+    "position" : {
+        latitude : 40.76572036743164,
+        longitude: -73.96308135986328
+    }
+}
+
+# Correr los crons manulmente en el puerto 8000
+
+# Verifico billing data en UI
+/api/billing?vendorID=1
+/api/billing?vendorID=2

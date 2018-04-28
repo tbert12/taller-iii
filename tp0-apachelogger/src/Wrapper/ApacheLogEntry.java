@@ -38,7 +38,7 @@ public class ApacheLogEntry {
             getErrorLogRegex(),Pattern.CASE_INSENSITIVE | Pattern.DOTALL
     );
 
-    private ApacheLogEntry(String line) {
+    private ApacheLogEntry(String line) throws Exception {
         lineParts = new HashMap<>();
         lineParts.put("_line",line);
         parseLine();
@@ -49,14 +49,14 @@ public class ApacheLogEntry {
     }
 
     public static ApacheLogEntry from(String line) {
-        return isApacheLogEntry(line) ? new ApacheLogEntry(line) : null;
+        try {
+            return new ApacheLogEntry(line);
+        } catch (Exception e) {
+            return null;
+        }
     }
 
-    private static boolean isApacheLogEntry(String entry) {
-        return entry.matches(getAccessLogRegex()) || entry.matches(getErrorLogRegex());
-    }
-
-    private void parseLine() {
+    private void parseLine() throws Exception {
         String logLine = lineParts.get("_line");
         Matcher accessLogMatcher = accessLogPattern.matcher(logLine);
         if (accessLogMatcher.matches()) {
@@ -65,6 +65,8 @@ public class ApacheLogEntry {
             Matcher errorLogMatcher = errorLogPattern.matcher(logLine);
             if (errorLogMatcher.matches()) {
                 parseErrorLogLine(errorLogMatcher);
+            } else {
+                throw new Exception("No apache line");
             }
         }
     }

@@ -1,3 +1,5 @@
 .idea/
 .database/
 *.log
+*.mp3
+*.wav

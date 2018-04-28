@@ -115,7 +115,7 @@ def get_stats(args):
         'cursor' : more_cursor
     }
 
-    memcache.add(cache_key, to_return, confi.store["MEMCACHE_STATS_EXPIRATION_SEC"])
+    memcache.add(cache_key, to_return, config.store["MEMCACHE_STATS_EXPIRATION_SEC"])
     logging.info("Stored stats in MemCache")
 
     return to_return

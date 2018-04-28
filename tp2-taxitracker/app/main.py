@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
-from src import store
+from src import store, config
 import logging
-import config
 
 app = Flask(__name__)
 
@@ -22,6 +21,7 @@ def register():
     response = {'success':False}
     code = 400
     if request.method == "POST":
+        logging.info(request.json)
         if "vendorID" in request.json:
             # Create taxi. Arguments id or generate id
             if store.register_taxi(request.json['vendorID']) != None:
