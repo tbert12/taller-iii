@@ -258,7 +258,9 @@ public class RadioListener {
             RadioListener radioListener = (listRadios) ? new RadioListener() : new RadioListener(args[0], args[1]);
             Runtime.getRuntime().addShutdownHook(new Thread(() -> {
                 LOGGER.info("SIGINT detected. Closing connection");
-                radioListener.stop();
+                if (radioListener != null) {
+                    radioListener.stop();
+                }
                 LOGGER.info("Connection closed");
             }));
             radioListener.start();
