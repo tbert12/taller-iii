@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\radio-listener-1.0-SNAPSHOT.jar;%APP_HOME%\lib\communication-wrapper-1.0-SNAPSHOT.jar;%APP_HOME%\lib\log4j-1.2.17.jar;%APP_HOME%\lib\slf4j-simple-1.7.25.jar;%APP_HOME%\lib\amqp-client-5.2.0.jar;%APP_HOME%\lib\json-simple-1.1.1.jar;%APP_HOME%\lib\slf4j-api-1.7.25.jar;%APP_HOME%\lib\junit-4.10.jar;%APP_HOME%\lib\hamcrest-core-1.1.jar
+set CLASSPATH=%APP_HOME%\lib\radio-listener-1.0-SNAPSHOT.jar;%APP_HOME%\lib\communication-wrapper-1.0-SNAPSHOT.jar;%APP_HOME%\lib\settings-1.0-SNAPSHOT.jar;%APP_HOME%\lib\log4j-1.2.17.jar;%APP_HOME%\lib\slf4j-simple-1.7.25.jar;%APP_HOME%\lib\amqp-client-5.2.0.jar;%APP_HOME%\lib\json-simple-1.1.1.jar;%APP_HOME%\lib\slf4j-api-1.7.25.jar;%APP_HOME%\lib\junit-4.10.jar;%APP_HOME%\lib\hamcrest-core-1.1.jar
 
 @rem Execute radio-listener
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %RADIO_LISTENER_OPTS%  -classpath "%CLASSPATH%" RadioListener %CMD_LINE_ARGS%

@@ -1,5 +1,7 @@
 #/bin/bash
-for i in {3..50}; do 
-	./up2 radio-listener user${i} radio1 > /tmp/user${i} &
+mkdir -p .log
+mkdir -p .log/radio-listener
+for i in {1..50}; do 
+	./up2 radio-listener user${i} radio1 > .log/radio-listener/user${i} &
 done
 

@@ -1,0 +1,9 @@
+./up2 broadcast > /dev/null 2>&1 &
+echo "OK::Broadcast"
+./up2 user-gestor > /dev/null 2>&1 &
+echo "OK::UserGestor"
+./up2 admin-handler > /dev/null 2>&1 &
+echo "OK::AdminHandler"
+./up2 admin > /dev/null 2>&1 &
+echo "OK::Admin"
+multitail .log/*.log

@@ -3,5 +3,6 @@ ARG1=$2
 ARG2=$3
 
 mkdir -p .log/
+cp database.properties .log/
 cd .log && cp ../$PROJECT/*.properties . && java -jar ../$PROJECT/build/libs/*.jar $ARG1 $ARG2
 
