@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 import json
 from google.appengine.api import taskqueue
-from src import store, config
+from taxitracker import store, config
 import logging
 
 

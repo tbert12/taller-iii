@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from src import store, config
+from taxitracker import store, config
 import logging
 
 app = Flask(__name__)
@@ -20,8 +20,7 @@ def index():
 def register():
     response = {'success':False}
     code = 400
-    if request.method == "POST":
-        logging.info(request.json)
+    if request.method == "POST" and request.json != None:
         if "vendorID" in request.json:
             # Create taxi. Arguments id or generate id
             if store.register_taxi(request.json['vendorID']) != None:
@@ -32,23 +31,20 @@ def register():
         else:
             response["info"] = "No `vendorID` in body data"
     else:
-        response['info'] = "Method should be POST"
+        response['info'] = "Method should be POST and have vendorID in JSONBody"
     
     return jsonify(response), code
 
 @app.route('/api/track', methods = ["POST"])
 def track():
-    if request.method == "POST":
+    response = {'success': False, 'info': "Request method should be POST"}
+    code = 404
+    if request.method == "POST" and request.json != None:
         logging.info("Track state of travel")
         result, info = store.track_travel(request.json)
-        return jsonify({
-            'success' : result,
-            'info' : info
-        })
-    return jsonify({
-        'success' : False,
-        'info' : "Request method should be POST"
-    }), 404
+        response['success'] = result
+        response['info'] = info
+    return response, code
 
 @app.route('/api/billing')
 def billing():
