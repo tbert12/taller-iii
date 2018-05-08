@@ -7,10 +7,8 @@ import logging
 
 app = Flask(__name__)
 
-@app.before_request
-def enable_local_error_handling():
-    app.logger.addHandler(logging.StreamHandler())
-    app.logger.setLevel(logging.DEBUG)
+app.logger.addHandler(logging.StreamHandler())
+app.logger.setLevel(logging.DEBUG)
 
 @app.route('/task/_travel_counter')
 def counter():

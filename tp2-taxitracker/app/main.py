@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 DEFAULT_PAGE_SIZE = config.store["DEFAULT_PAGE_SIZE"]
 
-@app.before_request
-def enable_local_error_handling():
+@app.before_first_request
+def before_first_request():
     app.logger.addHandler(logging.StreamHandler())
     app.logger.setLevel(logging.DEBUG)
 
@@ -19,7 +19,7 @@ def index():
 @app.route('/api/register', methods = ["POST"])
 def register():
     response = {'success':False}
-    code = 400
+    code = 400    
     if request.method == "POST" and request.json != None:
         if "vendorID" in request.json:
             # Create taxi. Arguments id or generate id
@@ -44,7 +44,8 @@ def track():
         result, info = store.track_travel(request.json)
         response['success'] = result
         response['info'] = info
-    return response, code
+        code = 200
+    return jsonify(response), code
 
 @app.route('/api/billing')
 def billing():

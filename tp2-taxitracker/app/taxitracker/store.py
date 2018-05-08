@@ -13,6 +13,7 @@ def register_taxi(vendorID):
         id = vendorID,
         vendorID = vendorID,
     )
+    logging.info("Registered Taxi: {}".format(vendorID))
     return taxi.put()
 
 
@@ -27,30 +28,31 @@ def add_task_travel_queue(args):
         tasks.append(taskqueue.Task(payload=json.dumps(args), method='PULL'))
         billing_queue.add(tasks)        
 
-track_travel_args = ("vendorID","status","time","position")
+track_travel_args = ("vendorID","type","date","position")
 def track_travel(json_data):
     logging.info("track travel")
     if all (key in json_data for key in track_travel_args):
         lat = json_data['position']['latitude']
         lon = json_data['position']['longitude']
-        if json_data['status'] in TRAVEL_STATUSES:
+        if json_data['type'] in model.TRAVEL_STATUSES:
             taxi_key = model.Taxi.get_by_id(json_data['vendorID'])
-
             if taxi_key != None:
                 travel = model.Travel(
                     taxi = taxi_key.key,
-                    state = json_data['status'],
-                    amount = json_data['amount'] if 'amount' in json_data else 0.0,
-                    date = datetime.datetime.strptime(json_data['time'], "%Y-%m-%d %H:%M:%S"),
+                    state = json_data['type'],
+                    amount = float(json_data['amount']) if 'amount' in json_data and len(json_data['amount'])>0 else 0.0,
+                    date = datetime.datetime.strptime(json_data['date'], "%Y-%m-%d %H:%M:%S"),
                     geo_position = ndb.GeoPt(lat, lon)
                 )
                 travel.put()
                 if travel.state == "DROPOFF": 
                     add_task_travel_queue({'vendorID' : travel.taxi.get().vendorID, 'total' : travel.amount})
             else:
-                return False, "taxi {} not exist".format(vendorID)
+                logging.info("Error on track. Taxi {} not exist".format(json_data['vendorID']))
+                return False, "taxi {} not exist".format(json_data['vendorID'])
         else:
-            return False, "Invalid status: {}".format(travel_status)
+            logging.info("Error on track. Taxi {} no exist".format(json_data['vendorID']))
+            return False, "Invalid status: {}".format(json_data["type"])
     else:
         return False, "Invalid arguments"
     return True, "Travel added"
