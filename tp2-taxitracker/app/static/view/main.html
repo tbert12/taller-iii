@@ -1,10 +1,10 @@
 <h2 class="md-display-1">Number of travels per day</h2>
-<md-button style="position: absolute; right: 10px; bottom: 10px;" class="md-fab" ng-click="goToAdmin()">
+<md-button style="position: fixed; right: 10px; bottom: 10px;" class="md-fab" ng-click="goToAdmin()">
     ADM
 </md-button>
 <!-- TODO:  date | #travel-->
 <div style="width: 100%; text-align: center;">
-<table infinite-scroll="loadStats()" infinite-scroll-disabled="_end" class="md-table" style="width: 60%; margin: 0 auto; border-spacing: 0;">
+<table infinite-scroll="loadStats()" infinite-scroll-immediate-check='loading' infinite-scroll-disabled="_end" class="md-table" style="width: 60%; margin: 0 auto; border-spacing: 0;">
     <thead>
         <tr>
             <th>Day</th>
@@ -22,4 +22,5 @@
         </tr>
     </tbody>
 </table>
+<div ng-show="_end" style="text-align: center; margin: 10px 0; color: grey;">No hay m&aacute;s resultados</div>
 </div>

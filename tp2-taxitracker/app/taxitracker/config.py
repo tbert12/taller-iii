@@ -1,9 +1,11 @@
 task = dict(
     travel_counter = dict(
+        QUEUE_NAME = 'travels-count-queue',
         LEASE_TASK_COUNT = 1000,
         LEASE_TASK_TIME_SEC = 20,
     ),
     billing_accumulator = dict(
+        QUEUE_NAME = 'billing-queue',
         LEASE_TASK_COUNT = 1000,
         LEASE_TASK_TIME_SEC = 100,
     ),

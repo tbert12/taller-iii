@@ -1,7 +1,7 @@
 <h2 class="md-display-1">Filter</h2>
 <!-- TODO Filters -->
 
-<md-button style="position: absolute; right: 10px; bottom: 10px;" class="md-fab" ng-click="goToMain()">
+<md-button style="position: fixed; right: 10px; bottom: 10px;" class="md-fab" ng-click="goToMain()">
         CLI
 </md-button>
 
@@ -23,7 +23,7 @@
 
     </div>
     </md-content>
-    <table infinite-scroll="loadStats()" infinite-scroll-disabled="_end" class="md-table" style="width: 60%; margin: 0 auto; border-spacing: 0;">
+    <table infinite-scroll="loadAdminStats()" infinite-scroll-immediate-check='loading' infinite-scroll-disabled="_end" class="md-table" style="width: 60%; margin: 0 auto; border-spacing: 0;">
         <thead>
             <tr>
                 <th>Taxi ID</th>
@@ -39,10 +39,12 @@
                 <td><b>{{stat.state}}</b></td>
                 <td>{{stat.amount ? "$" + stat.amount : "-"}}</td>
                 <td style="font-size: 10px;">
-                    <i>
-                        lat: {{stat.position.latitude}}<br/>
-                        lon: {{stat.position.longitude}}
-                    </i>
+                    <a href="https://www.google.com/maps/?q={{stat.position.latitude}},{{stat.position.longitude}}" target="_blank">
+                        <i>
+                            lat: {{stat.position.latitude}}<br/>
+                            lon: {{stat.position.longitude}}
+                        </i>
+                    </a>
                 </td>
                 <td>{{stat.date}}</td>
             </tr>
@@ -55,4 +57,5 @@
             </tr>
         </tbody>
     </table>
+    <div ng-show="_end" style="text-align: center; margin: 10px 0; color: grey;">No hay m&aacute;s resultados</div>
 </div>

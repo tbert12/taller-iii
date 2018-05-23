@@ -1,6 +1,6 @@
 'use strict';
 
-var App = angular.module('App', ['ngRoute','ngMaterial']);
+var App = angular.module('App', ['ngRoute','ngMaterial','infinite-scroll']);
 
 App.config(function($routeProvider) {
   let views = "/static/view";
@@ -33,12 +33,11 @@ App.controller('MainCtrl', function($scope, $rootScope, $log, $http, $routeParam
       $scope.loading = true;
       $http.get('/api/stats', { params: { cursor : $scope.cursor } })
           .then(function(res) {
-              $scope.loading = false;
               let data = res.data;
               $scope.stats = $scope.stats.concat(data.stats);
               $scope.cursor = data.cursor
-              $scope._end = data.cursor != null ? false : true;
-              console.log($scope._end);
+              $scope._end = $scope.cursor != null ? false : true;
+              $scope.loading = false;
           }, function(error){
               console.log("ERROR ON LOAD STATS");   
               $scope.loading = false;
@@ -63,7 +62,7 @@ App.controller('AdminCtrl', function($scope, $rootScope, $log, $http, $routePara
     to_date : null,
     cursor : null
   };
-  $scope._end = true;
+  $scope._end = false;
   $scope.loading = true;
 
   $scope.applyFilter = function() {
@@ -76,16 +75,17 @@ App.controller('AdminCtrl', function($scope, $rootScope, $log, $http, $routePara
       $scope.loading = true;
       $http.get('/api/admin_stats', { params : $scope.filters })
           .then(function(res) {
-              $scope.loading = false;
               let data = res.data;
               $scope.stats = $scope.stats.concat(data.stats);
               $scope.filters.cursor = data.cursor
               $scope._end = data.cursor === null ? true : false;
+              $scope.loading = false;
           }, function(error) {
               $scope.loading = false;
               console.log("Error on load admin stats");
           });
   }
+
   $scope.loadAdminStats();
 });
 

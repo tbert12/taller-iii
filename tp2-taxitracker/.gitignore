@@ -2,3 +2,4 @@ env/
 lib/*
 *.pyc
 .vscode/
+.idea/
