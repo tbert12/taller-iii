@@ -11,14 +11,10 @@ print "Headers"
 print list(DF_TRAVELS)
 print ""
 
-# 1. Clean cols
-IGNORED_COLS = ['RateCodeID', 'store_and_fwd_flag', 'payment_type', 'fare_amount', 'extra', 
-    'mta_tax', 'tip_amount', 'tolls_amount', 'improvement_surcharge', 
-    'pickup_zip', 'pickup_borough', 'pickup_neighborhood', 'dropoff_zip', 
-    'dropoff_borough', 'dropoff_neighborhood'
-]
-for col in IGNORED_COLS:
-    del DF_TRAVELS[col]
+# 1. Take important cols
+COLS = ['VendorID', 'pickup_datetime', 'dropoff_datetime', 'passenger_count', 'trip_distance', 'pickup_longitude', 'pickup_latitude', 'dropoff_longitude', 'dropoff_latitude', 'total_amount']
+
+DF_TRAVELS = DF_TRAVELS[COLS] 
 
 print "New Headers"
 print list(DF_TRAVELS)
