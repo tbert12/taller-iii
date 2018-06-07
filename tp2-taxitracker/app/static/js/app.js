@@ -68,6 +68,7 @@ App.controller('AdminCtrl', function($scope, $rootScope, $log, $http, $routePara
   $scope.applyFilter = function() {
       $scope.stats = [];
       $scope.loading = true;
+      $scope.filters.cursor = null;
       $scope.loadAdminStats();
   }
 

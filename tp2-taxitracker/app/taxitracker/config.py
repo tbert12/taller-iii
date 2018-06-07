@@ -1,13 +1,13 @@
 task = dict(
     travel_counter = dict(
         QUEUE_NAME = 'travels-count-queue',
-        LEASE_TASK_COUNT = 1000,
-        LEASE_TASK_TIME_SEC = 20,
+        LEASE_TASK_COUNT = 5000,
+        LEASE_TASK_TIME_SEC = 50,
     ),
     billing_accumulator = dict(
         QUEUE_NAME = 'billing-queue',
-        LEASE_TASK_COUNT = 1000,
-        LEASE_TASK_TIME_SEC = 100,
+        LEASE_TASK_COUNT = 5000,
+        LEASE_TASK_TIME_SEC = 50,
     ),
 )
 
